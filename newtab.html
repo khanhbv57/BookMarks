@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>My Bookmark</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"
+	/>
+	<link rel="stylesheet" type="text/css" href="css/jquery.contextMenu.css">
+	<script type="text/javascript" src="js/jquery.min.js">
+	</script>
+	<script type="text/javascript" src="js/bootstrap.min.js">
+	</script>
+	<script type="text/javascript" src="js/bootbox.min.js"></script>
+	<script type="text/javascript" src="js/display.js"></script>
+	<script type="text/javascript" src="js/addPage.js"></script>
+	<script type="text/javascript" src="js/jquery.contextMenu.js"></script>
+	<script type="text/javascript" src="js/jquery.ui.position.js"></script>
+	<script type="text/javascript" src="js/contextmenu.js"></script>
+	<script type="text/javascript" src="js/count.js"></script>
+</head>
+<body id="main">
+<div id="header">
+	My Book Mark
+</div>
+<div id="content">
+</div>
+
+<!-- Button trigger modal -->
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+      	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" 	aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">
+        	Add Bookmark</h3>
+    	</div>
+    	<div class="modal-body">
+        <form method="get">
+        	<input type="number" id="Idpage">
+			<div class="form-group">
+				<label>Title</label>
+		   		<input type="text" class="form-control" id="IdTitle" placeholder="Enter title">
+			</div>
+			<div class="form-group">
+		    	<label for="exampleInputPassword1">url</label>
+		    	<input type="text" class="form-control" id="IdUrl" placeholder="http://">
+			</div>
+			<div class="form-group">
+		  		<label for="exampleInputEmail1">Image</label>
+		   		<input type="text" class="form-control" id="IdImage" placeholder="Enter link image">
+			</div>
+			<div class="form-group">
+		    	<label for="exampleInputFile">or choose file</label>
+		    	<input type="file" id="IdFileImage">
+		    	<input id="b64" type="text" name="">
+		    	<img id="img">
+		    </div>
+</form>
+</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" id="save" class="btn btn-primary">Save</button>
+      </div>
+</body>
+</html>
